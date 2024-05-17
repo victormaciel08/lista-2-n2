@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int equ2(int a, int b, int c){
+	
+	return (b * b) - (4 * a * c);
+	
+}
+
+int main(void) {
+	
+	int A;
+	int B;
+	int C;
+	
+	printf("Digite um Numero, para A: ");
+	scanf("%d", &A);
+	
+	printf("Digite um Numero, para B: ");
+	scanf("%d", &B);
+	
+	printf("Digite um Numero, para C: ");
+	scanf("%d", &C);
+	
+	int result = equ2(A, B, C);
+	printf("%d", result);
+	
+	return 0;
+}
