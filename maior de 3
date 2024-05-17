@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void Verificador(int a, int b, int c){
+	
+	if(a>b && a>c){
+		printf("O maior e: %d", a);
+	}
+	else if(b>a && b>c){
+		printf("O maior e: %d", b);
+	}
+	else{
+		printf("O maior e: %d", c);
+	}
+}
+
+int main(void) {
+	
+	int A;
+	int B;
+	int C;
+	
+	printf("Digite um Numero, para A: ");
+	scanf("%d", &A);
+	
+	printf("Digite um Numero, para B: ");
+	scanf("%d", &B);
+	
+	printf("Digite um Numero, para C: ");
+	scanf("%d", &C);	
+	
+	Verificador(A, B, C);
+	
+	return 0;
+}
