@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// de celsius para fahrenheit formula: F=1.8*C+32
+// de fahrenheit para celsius formula: C=(F-32)/1.8
+
+void ConversorCelsius(float C, float F){
+	
+	printf("%.2f Celsius sao %.2f Fahrenheit.", C, F);
+}
+
+void ConversorFahrenheit(float F, float C){
+	
+	printf("%.2f Fahrenheit sao %.2f Celsis", F, C);
+}
+
+
+int main(void) {
+	
+	int op;
+	float Fh;
+	float Cl;
+	float F;
+  float C;
+
+
+	printf("Digite (1) - Celsius para Fahrenheit\n(2)- Fahrenheit para Celsius ");
+	scanf("%d", &op);
+	
+	switch(op){
+		case 1:
+			printf("Qual Temperatura Deseja Transformar para Fahrenheit: ");
+			scanf("%f", &Cl);
+			Conversor(Cl, Fh);
+			
+			break;
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+}
