@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+
+void Dado(int i){
+	
+	printf("%d", i);
+}
+
+int main(void) {
+	
+	srand(time(NULL));
+	int numAleatorio = rand() % 6 + 1;
+	
+	Dado(numAleatorio);
+	
+	return 0;
+}
