@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void Verificador(int a, int b){
+	
+	if(a>b){
+		printf("O maior e: %d", a);
+	}
+	else{
+		printf("O maior e: %d", b);
+	}
+}
+
+int main(void) {
+	
+	int A;
+	int B;
+	
+	printf("Digite um Numero, para A: ");
+	scanf("%d", &A);
+	
+	printf("Digite um Numero, para B: ");
+	scanf("%d", &B);
+		
+	Verificador(A, B);
+	
+	return 0;
+}
