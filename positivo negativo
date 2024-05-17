@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void Verificador(int numero){
+	
+	if(numero > 0){
+		printf ("Numero Positivo");
+	}
+	else if(numero == 0){
+		printf ("Numero Neutro");
+	}
+	else{
+		printf ("Numero Negativo");
+	}
+}
+
+int main(void) {
+	
+	int num;
+	
+	printf("Digite um Numero: ");
+	scanf("%d", &num);
+	
+	Verificador(num);
+	
+	return 0;
+}
